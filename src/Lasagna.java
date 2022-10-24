@@ -31,6 +31,14 @@ public class Lasagna {
     }
 
     /**
+     *
+     * @return the preparation time for a layer
+     */
+    public int GetLayerPreparationTime()
+    {
+        return aLayerPreparationTime;
+    }
+    /**
      * Checks the number of minutes left
      *
      * @param pNumberMinutesPassed The number of minutes passed
