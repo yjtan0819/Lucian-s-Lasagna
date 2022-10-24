@@ -7,8 +7,17 @@ public class Lasagna {
      */
     public Lasagna(){}
 
+    /**
+     * Creates a new lasagna with pExpectedMinutes and pLayerPreparation time
+     *
+     * @param pExpectedMinutes The number of minutes to cook a lasagna
+     * @param pLayerPreparationTime The number of minutes to prepare a layer
+     * @pre pExpectedMinutes > 0
+     * @pre pLayerPreparationTime > 0
+     */
     public Lasagna(int pExpectedMinutes, int pLayerPreparationTime)
     {
+        assert pExpectedMinutes > 0 && pLayerPreparationTime > 0;
         aExpectedMinutes = pExpectedMinutes;
         aLayerPreparationTime = pLayerPreparationTime;
     }
@@ -36,6 +45,16 @@ public class Lasagna {
         return aExpectedMinutes - pNumberMinutesPassed;
     }
 
-
-    public int PreparationTimeInMinutes(int)
+    /**
+     * Calculates the number of minutes to prepare the lasagna
+     * depending on the number of layers
+     *
+     * @param pNumLayers the number of layers
+     * @pre pNumLayers > 0
+     * @return the number of minutes to prepare the lasagna
+     */
+    public int PreparationTimeInMinutes(int pNumLayers)
+    {
+        return aLayerPreparationTime * pNumLayers;
+    }
 }
