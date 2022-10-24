@@ -57,4 +57,19 @@ public class Lasagna {
     {
         return aLayerPreparationTime * pNumLayers;
     }
+
+    /**
+     * Calculates the number of minutes spent cooking the lasagna
+     *
+     * @param pNumLayers the number of layers
+     * @param pNumberMinutesPassed the number of minutes passed
+     * @pre pNumLayers > 0
+     * @pre pNumberMinutesPassed > 0
+     * @return the number of minutes elapsed
+     */
+    public int ElapsedTimeInMinutes(int pNumLayers, int pNumberMinutesPassed)
+    {
+        assert pNumLayers > 0 && pNumberMinutesPassed > 0;
+        return pNumLayers * aLayerPreparationTime + pNumberMinutesPassed;
+    }
 }
