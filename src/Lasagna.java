@@ -65,11 +65,13 @@ public class Lasagna {
      * @param pNumberMinutesPassed the number of minutes passed
      * @pre pNumLayers > 0
      * @pre pNumberMinutesPassed > 0
+     * @pre pNumberMinutesPassed < aExpectedMinutes
      * @return the number of minutes elapsed
      */
     public int ElapsedTimeInMinutes(int pNumLayers, int pNumberMinutesPassed)
     {
         assert pNumLayers > 0 && pNumberMinutesPassed > 0;
+        assert pNumberMinutesPassed < aExpectedMinutes;
         return pNumLayers * aLayerPreparationTime + pNumberMinutesPassed;
     }
 }
