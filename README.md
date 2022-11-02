@@ -15,6 +15,7 @@
 
 👤 **Yi Jia Tan**
 
+* Website: https://yjtan0819.github.io/Personal-Website/
 * Github: [@yjtan0819](https://github.com/yjtan0819)
 * LinkedIn: [@yijia-tan](https://linkedin.com/in/yijia-tan)
 
