@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class LasagnaTest {
     private final Lasagna lasagna = new Lasagna();
-    private final Lasagna lasagna2 = new Lasagna(120,5);
+    private final Lasagna lasagna2 = new Lasagna(120, 5);
 
     @org.junit.jupiter.api.Test
     void expectedMinutesInOven() {
@@ -13,8 +13,7 @@ class LasagnaTest {
     }
 
     @Test
-    void getLayerPreparationTime()
-    {
+    void getLayerPreparationTime() {
         assertEquals(2, lasagna.GetLayerPreparationTime());
         assertEquals(5, lasagna2.GetLayerPreparationTime());
     }
@@ -28,12 +27,12 @@ class LasagnaTest {
     @org.junit.jupiter.api.Test
     void preparationTimeInMinutes() {
         assertEquals(4, lasagna.PreparationTimeInMinutes(2));
-        assertEquals(10,lasagna2.PreparationTimeInMinutes(2));
+        assertEquals(10, lasagna2.PreparationTimeInMinutes(2));
     }
 
     @org.junit.jupiter.api.Test
     void elapsedTimeInMinutes() {
-        assertEquals(26,lasagna.ElapsedTimeInMinutes(3,20));
-        assertEquals(55, lasagna2.ElapsedTimeInMinutes(3,40));
+        assertEquals(26, lasagna.ElapsedTimeInMinutes(3, 20));
+        assertEquals(55, lasagna2.ElapsedTimeInMinutes(3, 40));
     }
 }
